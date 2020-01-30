@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { BookPageComponent } from './book-page/book-page.component';
 import { CustomerPageComponent } from './customer-page/customer-page.component';
 import { LoanPageComponent } from './loan-page/loan-page.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookPageComponent,
     CustomerPageComponent,
-    LoanPageComponent
+    LoanPageComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
