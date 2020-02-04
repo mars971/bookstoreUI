@@ -5,25 +5,27 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MenuComponent } from './menu/menu.component';
+import { MenuComponent } from './menu/menu/menu.component';
 import { BookPageComponent } from './book-page/book-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDatepickerModule, MatInputModule,MatNativeDateModule, MAT_DATE_LOCALE} from '@angular/material';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { CustomerPageComponent } from './customer-page/customer-page.component';
 import { LoanPageComponent } from './loan-page/loan-page.component';
-//import { BackToMenuComponent } from './menu/back-to-menu/back-to-menu.component';
+import { BackToMenuComponent } from './menu/back-to-menu/back-to-menu.component';
 //import { MailModalComponent } from './modal/mail-modal/mail-modal.component';
-//import { MessageModalComponent } from './modal/message-modal/message-modal.component';
+import { MessageModalComponent } from './modal/message-modal/message-modal.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    MenuComponent,
     BookPageComponent,
     CustomerPageComponent,
     LoanPageComponent,
-    MenuComponent
+    BackToMenuComponent,
+    MessageModalComponent
   ],
   imports: [
     BrowserModule,
