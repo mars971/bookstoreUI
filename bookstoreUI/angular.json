@@ -66,6 +66,7 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "proxyConfig": "./proxy-conf.json",
           "options": {
             "browserTarget": "bookstoreUI:build"
           },
@@ -73,8 +74,7 @@
             "production": {
               "browserTarget": "bookstoreUI:build:production"
             }
-          },
-          "proxyConfig": "proxy-conf.json"
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",

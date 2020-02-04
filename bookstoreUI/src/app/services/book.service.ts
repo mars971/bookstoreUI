@@ -8,8 +8,11 @@ import { Book } from "src/app/models/book";
   providedIn: 'root'
 })
 export class BookService {
+  private baseUrl: string = 'http://localhost:8080/rest/category/api/';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { 
+
+  }
     
     /**
      * Get all book's categories as reference data from Backend server.
@@ -18,7 +21,7 @@ export class BookService {
          let headers = new HttpHeaders();
          headers.append('content-type', 'application/json');
          headers.append('accept', 'application/json');
-         return this.http.get<Category[]>('/library/rest/category/api/allCategories', {headers: headers});
+         return this.http.get<Category[]>(this.baseUrl +'allCategories', {headers: headers});
      }
      
     /**
